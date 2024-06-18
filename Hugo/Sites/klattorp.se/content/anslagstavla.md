@@ -2,6 +2,7 @@
 layout: page
 title: Anslagstavla
 private: true # This gallery does not show in lists, RSS, sitemaps, etc. On list pages, use cascade to hide descendants.
+draft: true
 #menu:
  #main:
     #weight: 90
