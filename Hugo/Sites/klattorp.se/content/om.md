@@ -9,8 +9,7 @@ menu:
 [![Flygbild över byn Klättorp vid Kyrksjön i Vissefjärda socken. I bildens övre del till höger syns en bro som leder in mot Storgatan i Vissefjärda samhälle. Vissefjärda kyrka och överdelen av klockstapeln på kyrkogården kan urskiljas.](/Flygfoto_feature.jpg "Flygbild över byn Klättorp vid Kyrksjön i Vissefjärda socken. I bildens övre del till höger syns en bro som leder in mot Storgatan i Vissefjärda samhälle. Vissefjärda kyrka och överdelen av klockstapeln på kyrkogården kan urskiljas. 1935.")](/Flygfoto_feature.jpg)
 
 ### Byn Klättorp
-Byn Klättorp ligger intill Kyrksjön. Vägen som passerar genom Klättorp och vidare norrut genom Kyrkeby utgör en del av den gamla 
-”Kungsvägen” som anordnades på 1680-talet då örlogsstaden Karlskrona anlades.
+Byn Klättorp ligger intill Kyrksjön. Vägen som passerar genom Klättorp och vidare norrut genom Kyrkeby utgör en del av den gamla ”Kungsvägen” som byggdes på 1680-talet då örlogsstaden Karlskrona anlades.
 
 >Hantverksbyn Klättorp växte fram under 1800-talets andra hälft på den norra gårdens marker. Klättorps strategiska läge intill Kyrksjön och landsvägen mot Karlskrona samt närheten till Vissefjärda sockencentrum gjorde platsen optimal för såväl handel, hantverk och tillverkning. Redan under 1820-talet uppstod ett garveri i byn. En barklada från denna verksamhet finns ännu kvar inne i det som kom att bli hantverksbyn. 
 >
