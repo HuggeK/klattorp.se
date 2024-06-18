@@ -1,5 +1,5 @@
 ---
-description: En by belägen längs med Kyrksjön.
+description: En by belägen intill Kyrksjön.
 #lastmod: 2024-06-17
 title: Klättorps Byalag
 featured_image: Flygfoto.jpg
