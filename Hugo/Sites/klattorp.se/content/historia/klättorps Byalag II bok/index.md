@@ -1,0 +1,10 @@
+---
+description: Under 90-talet sammanställde Ida Gustafsson bilder i tre fotoalbum på vår by. Detta är det andra albumet. Tusen tack till Eva Ahrenstedt för bilderna!
+#private: true # This gallery does not show in lists, RSS, sitemaps, etc. On list pages, use cascade to hide descendants.
+featured_image: F.jpg
+title: Klättorps Byalag II bok
+keywords: [Historia, By, Hembygd, Hantverksby]
+#type: gallery
+sort_by: Name
+weight: 1
+---

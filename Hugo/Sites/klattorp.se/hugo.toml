@@ -1,0 +1,38 @@
+baseURL = 'https://klattorp.se/'
+languageCode = 'sv'
+timeZone = "Europe/Stockholm"
+defaultContentLanguage = "sv"
+title = 'Klättorps Byalag'
+copyright = "© Klättorps Byalag"
+timeout = "120s"
+theme = 'gallery'
+enableRobotsTXT = true
+
+[params]
+
+  [params.author]
+    email = "byalag@klattorp.se"
+    name = "Klättorps Byalag"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[menu]
+  [[menu.footer]]
+    name = "byalag@klattorp.se"
+    url = "mailto:byalag@klattorp.se"
+    weight = 3
+    
+
+[services]
+  [services.rss]
+    limit = 100
