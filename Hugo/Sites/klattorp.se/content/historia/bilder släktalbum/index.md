@@ -4,7 +4,7 @@ description: Gamla bilder ur ett skört släktalbum. Tusen tack till Eva Ahrenst
 featured_image: A.jpg
 # keywords: [By, Historia, Hembygd, 1800-tal, 1900-tal]
 keywords: [Historia, By, Hembygd, Hantverksby]
-title: Bilder ifrån släktalbum 
+title: Bilder Släktalbum
 #type: gallery
 sort_by: Name
 weight: 1

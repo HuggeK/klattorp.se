@@ -3,7 +3,7 @@ description: Under 80-talet sammanställde Britt Lindblad bilder i tre fotoalbum
 private: true # This gallery does not show in lists, RSS, sitemaps, etc. On list pages, use cascade to hide descendants.
 featured_image: Klättorps byalag III.png
 keywords: [Historia, By, Hembygd, Hantverksby]
-title: Klättorps Byalag III
+title: Bilder Klättorps Byalag III
 weight: 1
 # menus: "main"
 #type: gallery
