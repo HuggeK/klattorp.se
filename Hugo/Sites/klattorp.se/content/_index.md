@@ -1,9 +1,8 @@
 ---
-description: En by belägen intill Kyrksjön.
-#lastmod: 2024-06-17
-title: Klättorp
+description: Bilder från byns historia. Klicka på en bild för att se bildtext.
+keywords: [Historia, By, Hembygd, Hantverksby]
+title: Historiska Bilder
 featured_image: Flygfoto.jpg
-# featured_image: # default: first image in this directory
 # featured_image on the home page is used for OpenGraph cards, etc.
 menus:
   main:
