@@ -19,8 +19,8 @@ Det finns många verktyg för att redigera metadata, det går tex att använda P
 
 
 Alla bilder i ett album namnges enligt följande struktur för att de ska komma i ordning på hemsidan: 
-* *A-Z*.jpg, Z *A-Z*.jpg
-*Se struktur i [https://klattorp.se/historia.zip](https://klattorp.se/historia.zip)*
+* *A-Z*.jpg, Z*A-Z*.jpg
+  * Se struktur i [https://klattorp.se/historia.zip](https://klattorp.se/historia.zip)*
 
 
 ### Arbeta med bilders metadata: 
@@ -39,9 +39,10 @@ Bra hemsida för att se metadata strukturerat: https://getpmd.iptc.org/
 ``-r`` är rekursivt genom alla mappar.
 ``-overwrite_original`` tar bort de kopiorna som exiftool skapar.
 
+
 [Copyright Notice:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#copyright-notice)
 ```
-./exiftool -r -xmp-xmprights='Copyright © STATEMENT' "C:\PATH" -overwrite_original
+./exiftool -r -xmp-dc:rights='Copyright © Klättorps Byalag & XXXX' "C:\XXXXX" -overwrite_original
 
 ```
 
@@ -54,24 +55,25 @@ Sätt licens / [Web Statement of Rights](https://www.iptc.org/std/photometadata/
 
 [Licensor URL:](https://ns.useplus.org/LDF/ldf-XMPSpecification#LicensorURL)
 ```
-./exiftool -r -xmp:LicensorURL='HTTPS://LICENSORURL.COM' "C:\PATH" -overwrite_original
+./exiftool -r -xmp:LicensorURL='https://klattorp.se' "C:\XXXX" -overwrite_original
 ```
 
 
 [Credit Line:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#credit-line)
 ```
-./exiftool -r -xmp-photoshop:Credit='Klättorps Byalag' "C:\PATH" -overwrite_original
+./exiftool -r -xmp-photoshop:Credit='Klättorps Byalag' "C:\XXXXX" -overwrite_original
 ```
 
 
 [Creator:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#creator)
 ```
-./exiftool -r -xmp-dc:Creator='CREATOR NAME "C:\PATH" -overwrite_original
+./exiftool -r -xmp-dc:Creator='CREATOR NAME "C:\XXXXX" -overwrite_original
 ```
 
 
+[Description Writer](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#description-writer)
 ```
-
+./exiftool -r -xmp-photoshop:CaptionWriter='Person, Person' "C:\XXXXX" -overwrite_original
 ```
 
 
