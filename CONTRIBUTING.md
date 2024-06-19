@@ -34,11 +34,45 @@ Bra hemsida för att se metadata strukturerat: https://getpmd.iptc.org/
 ./exiftool "C:/{Sökväg till filen/mappen}"
 ```
 
+#####  ExifTool Google Image IPTC metadata Tags:
 
-Sätt licens / *Web Statement of Rights* till CC BY-NC 4.0:
-```
-./exiftool -r -xmp-xmprights:WebStatement='https://creativecommons.org/licenses/by-nc/4.0/' "C:\Users\hugok\Downloads\Beskärda foton till hemsidan" -overwrite_original
-```
-där ``-r`` är rekursivt genom alla mappar.
+``-r`` är rekursivt genom alla mappar.
 ``-overwrite_original`` tar bort de kopiorna som exiftool skapar.
+
+[Copyright Notice:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#copyright-notice)
+```
+./exiftool -r -xmp-xmprights='Copyright © STATEMENT' "C:\PATH" -overwrite_original
+
+```
+
+
+Sätt licens / [Web Statement of Rights](https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#web-statement-of-rights) till CC BY-NC 4.0:
+```
+./exiftool -r -xmp-xmprights:WebStatement='https://creativecommons.org/licenses/by-nc/4.0/' "C:\PATH" -overwrite_original
+```
+
+
+[Licensor URL:](https://ns.useplus.org/LDF/ldf-XMPSpecification#LicensorURL)
+```
+./exiftool -r -xmp:LicensorURL='HTTPS://LICENSORURL.COM' "C:\PATH" -overwrite_original
+```
+
+
+[Credit Line:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#credit-line)
+```
+./exiftool -r -xmp-photoshop:Credit='Klättorps Byalag' "C:\PATH" -overwrite_original
+```
+
+
+[Creator:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#creator)
+```
+./exiftool -r -xmp-dc:Creator='CREATOR NAME "C:\PATH" -overwrite_original
+```
+
+
+```
+
+```
+
+
 </details>

@@ -8,7 +8,7 @@
     <section class="featured">
       <a class="featured-card" href="{{ .RelPermalink }}" style="background-image: url({{ $thumbnail.RelPermalink }})">
         <div>
-          <h2>{{ .Title }}</h2>
+          <h2>Utvald: {{ .Title }}</h2>
           <p>
             {{ if gt $gallery.albumCount 0 }}
               {{ T "albumCount" (dict "count" ($gallery.albumCount | lang.FormatNumber 0) "photoCount" ($gallery.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
