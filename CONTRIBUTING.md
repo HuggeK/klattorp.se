@@ -46,8 +46,7 @@ Bra hemsida för att se metadata strukturerat: https://getpmd.iptc.org/
 
 ```
 
-
-Sätt licens / [Web Statement of Rights](https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#web-statement-of-rights) till CC BY-NC 4.0:
+[Web Statement of Rights:](https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#web-statement-of-rights) till CC BY-NC 4.0:
 ```
 ./exiftool -r -xmp-xmprights:WebStatement='https://creativecommons.org/licenses/by-nc/4.0/' "C:\PATH" -overwrite_original
 ```
@@ -65,16 +64,21 @@ Sätt licens / [Web Statement of Rights](https://www.iptc.org/std/photometadata/
 ```
 
 
+[Description Writer:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#description-writer)
+```
+./exiftool -r -xmp-photoshop:CaptionWriter='Person, Person' "C:\XXXXX" -overwrite_original
+```
+
+
 [Creator:](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#creator)
 ```
 ./exiftool -r -xmp-dc:Creator='CREATOR NAME "C:\XXXXX" -overwrite_original
 ```
 
+&nbsp;
 
-[Description Writer](https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#description-writer)
+Sammansatt:
 ```
-./exiftool -r -xmp-photoshop:CaptionWriter='Person, Person' "C:\XXXXX" -overwrite_original
-```
-
+./exiftool -r -xmp-dc:rights='Copyright © Klättorps Byalag & XXXX' -xmp:LicensorURL='https://klattorp.se' -xmp-photoshop:Credit='Klättorps Byalag' -xmp-photoshop:CaptionWriter='Person, Person' -xmp-xmprights:WebStatement='[C:\XXXXX](https://creativecommons.org/licenses/by-nc/4.0/)" "C:\XXXXX" -overwrite_original
 
 </details>
