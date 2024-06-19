@@ -20,12 +20,15 @@ Byn Klättorp ligger intill Kyrksjön. Vägen som passerar genom Klättorp och v
 ### Digitaliseringen
 Idén att digitalisera de gamla Byalagsalbumen väcktes runt byagrillen 2022. Denna hemsida är en samling av historiska bilder på byn med alla de traditioner som byn har.
 
+* Länk till [Klättorps Byalag I bok](https://klattorp.se/kl%C3%A4ttorps-byalag-i-bok/).
+* Länk till [Klättorps Byalag II bok](https://klattorp.se/kl%C3%A4ttorps-byalag-ii-bok/).
+
 Bildtexter är transkriberade ur fotoböckerna och inlagda som beskrivning till bilderna i form av metadata. Detta som gör att bildtexterna följer med bilderna om du väljer att ladda ner bilderna på hemsidan. Bearbetning av bilderna och hemsida byggd av [Hugo Karlsso(Klättorp 101)](https://github.com/HuggeK)(Klättorp 101) med hjälp av ramverket [Hugo](https://gohugo.io) till midsommar 2024.
 
-* Alla bilder på hemsidan går att ladda ner som en zipfil på följande [länk](https://klattorp.se/historia.zip). Alla bilder är licenserade enligt [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+* Alla bilder (ca 330) på hemsidan går att ladda ner som en zipfil på följande [länk](https://klattorp.se/historia.zip). Alla bilder är licenserade enligt [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
->För bidrag av foton till samlingen samt förslag till bildtexter, läs [instruktioner](https://github.com/HuggeK/klattorp.se/blob/main/CONTRIBUTING.md) och kontakta sedan Hugo på <byalaget@klattorp.se>.
+>För bidrag av foton till samlingen samt förslag till bildtexter, läs [instruktioner](https://github.com/HuggeK/klattorp.se/blob/main/CONTRIBUTING.md) och mejla <byalaget@klattorp.se>. För bortagning av bild kontakta byalaget@klattorp.se så tas bilden bort så snabbt som möjligt.
 
 
 
-Hemsidan senast uppdaterad 2024-06-19.
+Hemsidan senast uppdaterad 2024-06-20.

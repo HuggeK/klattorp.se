@@ -1,5 +1,5 @@
 ---
-description: Bilder från byns historia. Klicka på en bild för att se bildtext.
+description: Bilder från byns historia.
 keywords: [Historia, By, Hembygd, Hantverksby]
 title: Historiska Bilder
 featured_image: Flygfoto.jpg

@@ -26,6 +26,9 @@ enableRobotsTXT = true
     disableLatLong = true
     includeFields = "ImageDescription|Orientation"
 
+[taxonomies]
+  tag = 'tags'
+
 [menu]
   [[menu.footer]]
     name = "byalag@klattorp.se"
