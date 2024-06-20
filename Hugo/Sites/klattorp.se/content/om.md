@@ -27,8 +27,6 @@ Bildtexter är transkriberade ur fotoböckerna och inlagda som beskrivning till 
 
 * Alla bilder (ca 330) på hemsidan går att ladda ner som en zipfil på följande [länk](https://klattorp.se/historia.zip). Alla bilder är licenserade enligt [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
->För bidrag av foton till samlingen samt förslag till bildtexter, läs [instruktioner](https://github.com/HuggeK/klattorp.se/blob/main/CONTRIBUTING.md) och mejla <byalaget@klattorp.se>. För bortagning av bild kontakta byalaget@klattorp.se så tas bilden bort så snabbt som möjligt.
-
-
+För bidrag av foton till samlingen samt förslag till bildtexter, läs [instruktioner](https://github.com/HuggeK/klattorp.se/blob/main/CONTRIBUTING.md) och mejla <byalaget@klattorp.se>. För bortagning av bild kontakta byalaget@klattorp.se så tas bilden bort så snabbt som möjligt.
 
 Hemsidan senast uppdaterad 2024-06-20.
