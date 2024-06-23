@@ -15,20 +15,20 @@ Det finns många verktyg för att redigera metadata, det går tex att använda P
 
 > * Om ni ska bidra med bilder ser jag gärna att ni själva fyller i metadata i filerna då detta gör det mycket enklare för mig att bygga hemsidan, och ladda upp de nya bilderna. 
 > 
-> * Om nu inte du kan redigera bilderna ser jag gärna att bildtexter skickas in som datorskriven text, *inte* bilder på skrift på papper då det innebär merjobb för mig för att transkribrera
+> * Om nu inte du kan redigera bilderna ser jag gärna att bildtexter skickas in som datorskriven text, *inte* bilder på skrift på papper då det innebär merjobb för mig för att transkribrera.
 
 
 Alla bilder i ett album namnges enligt följande struktur för att de ska komma i ordning på hemsidan: 
-* *A-Z*.jpg, Z*A-Z*.jpg
-  * Se struktur i [https://klattorp.se/historia.zip](https://klattorp.se/historia.zip)*
+* [A-Z].jpg, Z[A-Z].jpg, ZZ[A-Z] e.t.c. Se struktur i [https://klattorp.se/historia.zip](https://klattorp.se/historia.zip)*
+
+
+<details>
+<summary> Bra exiftool kommandon: </summary>
 
 
 ### Arbeta med bilders metadata: 
 Bra hemsida för att se metadata strukturerat: https://getpmd.iptc.org/
 
-
-<details>
-<summary> Bra exiftool kommandon: </summary>
 
 ```
 ./exiftool "C:/{Sökväg till filen/mappen}"
@@ -80,5 +80,27 @@ Bra hemsida för att se metadata strukturerat: https://getpmd.iptc.org/
 Sammansatt:
 ```
 ./exiftool -r -xmp-dc:rights='Copyright © Klättorps Byalag & XXXX' -xmp:LicensorURL='https://klattorp.se' -xmp-photoshop:Credit='Klättorps Byalag' -xmp-photoshop:CaptionWriter='Person, Person' -xmp-xmprights:WebStatement='[C:\XXXXX](https://creativecommons.org/licenses/by-nc/4.0/)" "C:\XXXXX" -overwrite_original
+```
 
+Kopiera metadata till [A-Z]*\_filter\_*.jpg:
+```
+./exiftool -tagsFromFile -if -p "$directory/$filename" -ext jpg -all:all './public/bilder_sent_1800-tal_tidigt_1900-tal/${filename:tr/ s/ .jpg//}*_filter_*.jpg' DIR > "./public/bilder_sent_1800-tal_tidigt_1900-tal"
+```
+
+Hur gör jag så att jag kan referera till nuvarande fil när programmet går igenom den i srcfile? dvs $filename ger t.e.x. ZZ.jpg. hur får jag bort .jpg ifrån filnamnet för att kunna lägga in wildcard söken på \*\_filter\_\*?
+Se https://exiftool.org/exiftool_pod.html#Advanced-formatting-feature.
+
+Perl Expression: https://stackoverflow.com/a/6863515/18008722
+
+Stack Overflow lösning där det kopierars _compressed filer. https://stackoverflow.com/a/67521876/18008722
+ * Problemet men den lösningen är att Hugo spottar ut två filer, en som är 70 karaktärer utanpå filnamnet och en som är 69. 
+   * Använda flera if-satser?
+
+```
+exiftool -if "$Filename=~/_compressed/i" -r -TagsFromFile %d%-.11f.%e -All:All C:\photo
+```
+
+Då regexen är [A-Z] får man köra det 5 ggr med -execute men ändra till Z[A-Z] e.t.c.
+
+* TODO: Fixa [A-Z] regex på srcfile.
 </details>
