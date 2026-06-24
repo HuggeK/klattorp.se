@@ -104,3 +104,58 @@ Då regexen är [A-Z] får man köra det 5 ggr med -execute men ändra till Z[A-
 
 * TODO: Fixa [A-Z] regex på srcfile.
 </details>
+&nbsp;
+
+## Bygga hemsidan lokalt
+
+Hemsidan byggs med [Hugo](https://gohugo.io/). Temat (`gallery`) och Hugo
+självt ingår som **git-submoduler**, så själva Hugo-binären checkas inte längre
+in i repot (tidigare låg en 88 MB stor `hugo.exe` här).
+
+### 1. Hämta submodulerna
+
+Efter att du klonat repot måste du hämta submodulerna (temat under
+`Hugo/Sites/klattorp.se/themes/gallery` och Hugo-källkoden under `Hugo/bin/hugo`):
+
+```bash
+git submodule update --init --recursive
+```
+
+Klonar du för första gången kan du ta allt på en gång med:
+
+```bash
+git clone --recurse-submodules <repo-url>
+```
+
+### 2. Bygg Hugo (Extended)
+
+Temat kräver **Hugo Extended (>= 0.121.2)**. Hugo levereras som källkod i
+submodulen `Hugo/bin/hugo` och byggs till en körbar binär. Detta kräver
+[Go](https://go.dev/) (>= 1.22) och en C-kompilator (t.ex. `gcc`), eftersom
+Extended-utgåvan använder CGO för SCSS/Sass:
+
+```bash
+cd Hugo/bin/hugo
+CGO_ENABLED=1 go build -tags extended -o ../hugo-bin .
+cd ../../..
+```
+
+Binären hamnar då i `Hugo/bin/hugo-bin` (gitignorerad). Föredrar du att slippa
+bygga själv kan du istället installera Hugo Extended direkt — se
+<https://gohugo.io/installation/> — och använda kommandot `hugo` nedan.
+
+### 3. Bygg själva hemsidan
+
+```bash
+cd Hugo/Sites/klattorp.se
+../../bin/hugo-bin --gc --minify      # eller bara: hugo --gc --minify
+```
+
+Det färdiga statiska resultatet hamnar i `Hugo/Sites/klattorp.se/public/`.
+Första bygget tar en stund eftersom Hugo skalar ner alla bilder i galleriet.
+
+För lokal förhandsvisning med live-uppdatering:
+
+```bash
+../../bin/hugo-bin server             # öppna http://localhost:1313/
+```

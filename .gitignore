@@ -1,3 +1,6 @@
 public/
 resources/
 historia.zip
+# Hugo-binär byggd från submodulen Hugo/bin/hugo (se CONTRIBUTING.md)
+Hugo/bin/hugo-bin
+Hugo/bin/.hugo_build.lock

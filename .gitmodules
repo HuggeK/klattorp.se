@@ -1,3 +1,6 @@
 [submodule "Hugo/Sites/klattorp.se/themes/gallery"]
 	path = Hugo/Sites/klattorp.se/themes/gallery
 	url = https://github.com/nicokaiser/hugo-theme-gallery.git
+[submodule "Hugo/bin/hugo"]
+	path = Hugo/bin/hugo
+	url = https://github.com/gohugoio/hugo.git
