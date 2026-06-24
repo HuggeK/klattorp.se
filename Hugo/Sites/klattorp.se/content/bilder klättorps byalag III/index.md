@@ -8,6 +8,5 @@ weight: 1
 # menus: "main"
 #type: gallery
 sort_by: Name
-weight: 1
 # list pages require at least one image to be displayed.
 ---
